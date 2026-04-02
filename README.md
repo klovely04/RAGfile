@@ -1,13 +1,13 @@
 # RAG Knowledge Assistant
 
-一个面向初学者的最小可用 RAG（Retrieval-Augmented Generation，检索增强生成）项目。
+一个最小可用 RAG（Retrieval-Augmented Generation，检索增强生成）项目。
 
 这个项目解决的问题是：
 - 你有一批本地文档（`txt/md/pdf/docx`）。
 - 你希望上传后自动切分、向量化、建立索引。
 - 你希望通过聊天接口基于文档内容问答，而不是“纯大模型胡说”。
 
-## 1. 项目在做什么
+## 1. 项目目的
 
 核心能力：
 - 文档解析：读取 `txt/md/pdf/docx`。
@@ -107,7 +107,7 @@ tests/
   test_*.py           # 单元与接口测试
 ```
 
-## 7. 架构分层理解（给初学者）
+## 7. 架构分层理解
 
 - Route 层（`api/routes`）：
   - 只做“收请求、调服务、组响应”。
@@ -130,7 +130,7 @@ ruff format .
 mypy app
 ```
 
-## 9. 新手建议阅读顺序
+## 9. 建议阅读顺序
 
 推荐按这个顺序读代码：
 1. `app/main.py`（应用入口）
